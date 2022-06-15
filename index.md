@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
+## 天气晴朗
+网络代理配置方法（可访问google）
+1. 设置系统代理
+- 桌面左下角搜索 “internet选项”，打开
+- 选择“连接”标签页，打开“局域网设置”
 
-You can use the [editor on GitHub](https://github.com/caowent/blog.caowent.com/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+- 选中“为LAN使用代理服务器”，点击“高级”
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- 按下图所示设置代理服务器（前3项为空），陆续点击确定
 
-### Markdown
+- 至此系统代理已设置完毕，浏览器可访问google
+- 但这样所有流量都会走代理，走代理毕竟会慢一点。为了保证一般流量的网速，需要一个工具把google流量和一般流量区分开
+2. 下载chrome浏览器
+chrome下载链接
+3. 安装代理插件
+- 打开chrome浏览器，点击左上角
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- 点击“chrome网上应用商店”，打开应用商店
+- 搜索“SwitchyOmega”，点击程序进入
 
-```markdown
-Syntax highlighted code block
+- 点击“添加至chrome”,完成代理插件的安装
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+4. 设置自动代理
+- 安装完成后，会有教程提示，可以选择跳过
+- 点击右上角“SwitchyOmega”的图标，选择“选项”
 
-**Bold** and _Italic_ and `Code` text
+- 选择“proxy”标签页，按下图填入代理服务器配置，点击“应用选项”
 
-[Link](url) and ![Image](src)
-```
+- 选择“auto switch”标签页，按下图把代理的域名通配符改成“*.google.com”，确认默认为直连，点击“应用选项”
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+- 点击右上角“SwitchyOmega”的图标，选择“auto switch”
 
-### Jekyll Themes
+- 至此，自动代理配置完成。google流量走代理，一般流量直连
+- 有时有特殊网址的代理需求，比如图片刷不出来，可以手动选择“proxy”
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/caowent/blog.caowent.com/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+注：如果有软件出现网络问题，可以把系统代理关闭，取消选中“为LAN 使用代理服务器”
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
